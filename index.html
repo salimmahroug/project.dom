@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="total">
+        Prix Total: $<span id="total-price">0</span>
+    </div>
+    <div class="item">
+        <div>
+         <span class="name">iphone 11</span>   
+        </div>
+        <div>
+          <img src="https://mobizil.com/wp-content/uploads/2019/09/Apple-iPhone-11.jpg" alt="">  
+        </div>
+        <div>
+         <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$450</span>   
+        <button class="delete-button">Supprimer</button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 12</span>    
+        </div>
+        <div>
+        <img src="https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/i/p/iphone-12-64go-violet1.jpg" alt="">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$800</span>    
+        <button class="delete-button">Supprimer</button>
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+            <span class="name">iphone 13</span>   
+        </div>
+        <div>
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-13-pro-max-silver-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072987085" alt="">   
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$1000</span>    
+        <button class="delete-button">Supprimer</button>
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 14</span>    
+        </div>
+        <div>
+        <img src="https://www.tunisianet.com.tn/279676-large/smartphone-apple-iphone-14-pro-5g-128-go-silver.jpg "">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$1300</span>    
+        <button class="delete-button">Supprimer</button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 15</span>    
+        </div>
+        <div>
+        <img src="https://static-www.o2.co.uk/sites/default/files/2023-09/blue-iphone-15-pro-max-sku-header-120923_1.png"">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$2000</span>    
+        <button class="delete-button">Supprimer</button>
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+         <span class="name">iphone X</span>   
+        </div>
+        <div>
+          <img src="https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-x/iphone-x-space-gray.jpg" alt="">  
+        </div>
+        <div>
+         <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$400</span>   
+        <button class="delete-button">Supprimer</button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 8</span>    
+        </div>
+        <div>
+        <img src="data:image/jpeg;base64,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" alt="">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$400</span> 
+        <button class="delete-button">Supprimer</button>   
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+         <span class="name">iphone 7 plus</span>   
+        </div>
+        <div>
+         <img src="https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-7-plus/iphone-7-plus-rose-gold.jpg" alt="">   
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$200</span>
+        <button class="delete-button">Supprimer</button>    
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 14 pro max</span>    
+        </div>
+        <div>
+        <img src="https://www.tunisianet.com.tn/286978-large/smartphone-apple-iphone-14-pro-max-6go-128-go-noir.jpg">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$1300</span> 
+        <button class="delete-button">Supprimer</button>   
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 15 pro</span>    
+        </div>
+        <div>
+        <img src="data:image/jpeg;base64,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"">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$2000</span> 
+        <button class="delete-button">Supprimer</button>   
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+         <span class="name">iphone 11</span>   
+        </div>
+        <div>
+          <img src="https://mobizil.com/wp-content/uploads/2019/09/Apple-iPhone-11.jpg" alt="">  
+        </div>
+        <div>
+         <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$450</span>   
+        <button class="delete-button">Supprimer</button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 12</span>    
+        </div>
+        <div>
+        <img src="https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/i/p/iphone-12-64go-violet1.jpg" alt="">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$800</span>    
+        <button class="delete-button">Supprimer</button>
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+            <span class="name">iphone 13</span>   
+        </div>
+        <div>
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-13-pro-max-silver-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072987085" alt="">   
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$1000</span>    
+        <button class="delete-button">Supprimer</button>
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 14</span>    
+        </div>
+        <div>
+        <img src="https://www.tunisianet.com.tn/279676-large/smartphone-apple-iphone-14-pro-5g-128-go-silver.jpg "">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$1300</span>    
+        <button class="delete-button">Supprimer</button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 15</span>    
+        </div>
+        <div>
+        <img src="https://static-www.o2.co.uk/sites/default/files/2023-09/blue-iphone-15-pro-max-sku-header-120923_1.png"">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$2000</span>    
+        <button class="delete-button">Supprimer</button>
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+         <span class="name">iphone X</span>   
+        </div>
+        <div>
+          <img src="https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-x/iphone-x-space-gray.jpg" alt="">  
+        </div>
+        <div>
+         <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$400</span>   
+        <button class="delete-button">Supprimer</button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 8</span>    
+        </div>
+        <div>
+        <img src="data:image/jpeg;base64,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" alt="">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$400</span> 
+        <button class="delete-button">Supprimer</button>   
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+         <span class="name">iphone 7 plus</span>   
+        </div>
+        <div>
+         <img src="https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-7-plus/iphone-7-plus-rose-gold.jpg" alt="">   
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$200</span>
+        <button class="delete-button">Supprimer</button>    
+        </div>
+        
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 14 pro max</span>    
+        </div>
+        <div>
+        <img src="https://www.tunisianet.com.tn/286978-large/smartphone-apple-iphone-14-pro-max-6go-128-go-noir.jpg">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$1300</span> 
+        <button class="delete-button">Supprimer</button>   
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <span class="name">iphone 15 pro</span>    
+        </div>
+        <div>
+        <img src="data:image/jpeg;base64,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"">    
+        </div>
+        <div>
+        <button class="remove-button">-</button>
+        <span class="quantity">1</span>
+        <button class="add-button">+</button>
+        <button class="like-button">🤍like</button>
+        <span class="price">$2000</span> 
+        <button class="delete-button">Supprimer</button>   
+        </div>
+        
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
